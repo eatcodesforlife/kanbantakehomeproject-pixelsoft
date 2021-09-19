@@ -3,7 +3,7 @@ import React,{ useEffect, useState } from 'react'
 const InProgress = ({ item, jobCompleted }) => {
   
   const [ hour, setHour ] = useState(0)
-  const [ mins, setMins ] = useState(0)
+  const [ mins, setMins ] = useState(58)
   const [ secs, setSecs ] = useState(0)
   const [isTaskRunning, setIsTaskRunning] = useState(true)
   const { id, newTask, rate } = item
@@ -24,7 +24,7 @@ const InProgress = ({ item, jobCompleted }) => {
            setMins(mins +1)
            setSecs(0)
          }
-         if(mins === 59){
+         if(mins === 59 && secs === 59){
            setHour(hour +1)
            setMins(0)
          }
@@ -33,7 +33,6 @@ const InProgress = ({ item, jobCompleted }) => {
       return () => clearInterval(timer)
     }
   }, [secs, isTaskRunning, mins, hour])
-
   
 
   return (

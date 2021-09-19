@@ -69,7 +69,6 @@ function App() {
           <form onSubmit={handleSubmit}>
             { isAddTask &&
               <div className="form-control">
-                <label htmlFor="newTask">new task: </label>
                 <input 
                   type="text" 
                   value={newTask}
