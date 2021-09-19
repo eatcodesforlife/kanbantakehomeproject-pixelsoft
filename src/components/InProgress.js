@@ -26,7 +26,7 @@ const InProgress = ({ item, jobCompleted }) => {
          }
          if(mins === 59){
            setHour(hour +1)
-           setSecs(0)
+           setMins(0)
          }
           
       }, 1000)
