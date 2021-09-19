@@ -37,7 +37,7 @@ const InProgress = ({ item, jobCompleted }) => {
   
 
   return (
-    <div className='items'>
+    <div className='tasks'>
       <h4>{newTask}</h4>
       <h4>{`${hour} : ${mins} : ${secs}`}</h4>
       <button onClick={() => resolve(id, hour, mins, rate)}>resolve</button>
