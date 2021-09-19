@@ -3,7 +3,7 @@ import React,{ useEffect, useState } from 'react'
 const InProgress = ({ item, jobCompleted }) => {
   
   const [ hour, setHour ] = useState(0)
-  const [ mins, setMins ] = useState(58)
+  const [ mins, setMins ] = useState(0)
   const [ secs, setSecs ] = useState(0)
   const [isTaskRunning, setIsTaskRunning] = useState(true)
   const { id, newTask, rate } = item
