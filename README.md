@@ -9,7 +9,7 @@ ___
   * Done  
 
     
-__To Do section__
+__To Do section:__
  
   * [x] __Set rate to constant number__
     * constant number is 25.
@@ -20,14 +20,15 @@ __To Do section__
     * When user clicks "Start" the task is added in the "In Progress" section.
 
    
-__In Progress section__
+__In Progress section:__
 
 * [x] __Timer__
-  *  A running timer is added into task card to show amount of time in work.
+  *  A running timer is added into the task card to show amount of time in work.
 * [x] __Resolve__
   * A resolve button is button is added into the task card.
-  * When user clicks "resolve", hours worked will be calculated against the constant rate and with this data the task is moved to Done section.
+  * When user clicks "resolve", hours worked will be calculated against the constant hourly rate and with this data the task is moved to Done section.
 
-__Done section__
+__Done section:__
 
 * [x] Task shown includes calculated rate(hours worked * hourly rate).
+
