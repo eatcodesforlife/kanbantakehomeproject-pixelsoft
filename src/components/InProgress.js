@@ -1,5 +1,5 @@
 import React,{ useEffect, useState } from 'react'
-
+import numeral from 'numeral'
 const InProgress = ({ item, jobCompleted }) => {
   
   const [ secs, setSecs ] = useState(0)
@@ -22,6 +22,7 @@ const InProgress = ({ item, jobCompleted }) => {
 
   useEffect(() =>{
     if(isTaskRunning){
+        
         const timeCounter = setInterval(() => {
         setSecs( secs => secs + 1)
 
@@ -33,13 +34,13 @@ const InProgress = ({ item, jobCompleted }) => {
         const divisor_for_seconds = divisor_for_minutes % 60;
         const seconds = Math.ceil(divisor_for_seconds);
         
+        
         setTimer({
           hour: hours,
           mins: minutes,
           seconds
         })
 
-          
       }, 1000)
       return () => clearInterval(timeCounter)
     }
@@ -51,7 +52,7 @@ const InProgress = ({ item, jobCompleted }) => {
   return (
     <div className='tasks'>
       <h4>{newTask}</h4>
-      <h4>{`${hour} : ${mins} : ${seconds}`}</h4>
+      <h4>{`${numeral(hour).format('00')} : ${numeral(mins).format('00')} : ${numeral(seconds).format('00')}`}</h4>
       <button onClick={() => resolve(id, hour, mins, rate)}>resolve</button>
     </div>
   )
