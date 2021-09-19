@@ -25,7 +25,7 @@ __In Progress section:__
 * [x] __Timer__
   *  A running timer is added into the task card to show amount of time in work.
 * [x] __Resolve__
-  * A resolve button is button is added into the task card.
+  * A resolve is button is added into the task card.
   * When user clicks "resolve", hours worked will be calculated against the constant hourly rate and with this data the task is moved to Done section.
 
 __Done section:__
