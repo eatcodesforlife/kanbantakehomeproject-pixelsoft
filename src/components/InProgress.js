@@ -2,7 +2,7 @@ import React,{ useEffect, useState } from 'react'
 
 const InProgress = ({ item, jobCompleted }) => {
   
-  const [ secs, setSecs ] = useState(1)
+  const [ secs, setSecs ] = useState(0)
   const [ timer, setTimer ] = useState({
     hour: 0,
     mins: 0,
