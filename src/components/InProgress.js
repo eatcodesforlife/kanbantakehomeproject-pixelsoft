@@ -1,5 +1,9 @@
 import React,{ useEffect, useState } from 'react'
 import numeral from 'numeral'
+
+
+
+
 const InProgress = ({ item, jobCompleted }) => {
   
   const [ secs, setSecs ] = useState(1)
