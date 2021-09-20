@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { AppContext } from '../App'
 
+const NewTask = () => {
 
-const NewTask = ({taskList, currentTask}) => {
-
-  
+  const {taskList, currentTask} = useContext(AppContext)
 
   return (
     <div>

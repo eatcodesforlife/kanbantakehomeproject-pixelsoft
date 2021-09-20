@@ -1,11 +1,11 @@
-import React,{ useEffect, useState } from 'react'
+import React,{ useEffect, useState, useContext } from 'react'
 import numeral from 'numeral'
+import { AppContext } from '../App'
 
 
 
-
-const InProgress = ({ item, jobCompleted }) => {
-  
+const InProgress = ({ item }) => {
+  const { jobCompleted } = useContext(AppContext)
   const [ secs, setSecs ] = useState(1)
   const [ timer, setTimer ] = useState({
     hour: 0,
